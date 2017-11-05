@@ -1,0 +1,21 @@
+Handsome
+Strong
+Lovely
+Sweet
+Happy
+Joyful
+Manly
+Intelligent
+Smart
+Attractive
+----- #Do not touch this line
+Ugly
+Weak
+Evil
+Disgusting
+Unattractive
+Distasteful
+Unpleasant
+Dumb
+Stupid
+Sad
