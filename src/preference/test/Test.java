@@ -149,34 +149,35 @@ public class Test {
             endTime = System.currentTimeMillis();
             
             if(!isItemName){
-            
-                if(keyCode == 37){
-                    if(combination == Combination.ITEM0GOOD){
-                        timesItem0Good.add((int)(endTime - startTime));
+                if((endTime - startTime) > 3000){
+                    if(keyCode == 37){
+                        if(combination == Combination.ITEM0GOOD){
+                            timesItem0Good.add((int)(endTime - startTime));
+                        }
+                        if(combination == Combination.ITEM0BAD){
+                            timesItem0Bad.add((int)(endTime - startTime));
+                        }
+                        if(combination == Combination.ITEM1GOOD){
+                            timesItem1Good.add((int)(endTime - startTime));
+                        }
+                        if(combination == Combination.ITEM1BAD){
+                            timesItem1Bad.add((int)(endTime - startTime));
+                        }
                     }
-                    if(combination == Combination.ITEM0BAD){
-                        timesItem0Bad.add((int)(endTime - startTime));
-                    }
-                    if(combination == Combination.ITEM1GOOD){
-                        timesItem1Good.add((int)(endTime - startTime));
-                    }
-                    if(combination == Combination.ITEM1BAD){
-                        timesItem1Bad.add((int)(endTime - startTime));
-                    }
-                }
 
-                else if(keyCode == 39){
-                    if(combination == Combination.ITEM0GOOD){
-                        timesItem1Bad.add((int)(endTime - startTime));
-                    }
-                    if(combination == Combination.ITEM0BAD){
-                        timesItem1Good.add((int)(endTime - startTime));
-                    }
-                    if(combination == Combination.ITEM1GOOD){
-                        timesItem0Bad.add((int)(endTime - startTime));
-                    }
-                    if(combination == Combination.ITEM1BAD){
-                        timesItem0Good.add((int)(endTime - startTime));
+                    else if(keyCode == 39){
+                        if(combination == Combination.ITEM0GOOD){
+                            timesItem1Bad.add((int)(endTime - startTime));
+                        }
+                        if(combination == Combination.ITEM0BAD){
+                            timesItem1Good.add((int)(endTime - startTime));
+                        }
+                        if(combination == Combination.ITEM1GOOD){
+                            timesItem0Bad.add((int)(endTime - startTime));
+                        }
+                        if(combination == Combination.ITEM1BAD){
+                            timesItem0Good.add((int)(endTime - startTime));
+                        }
                     }
                 }
             }

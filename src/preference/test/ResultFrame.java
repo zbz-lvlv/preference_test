@@ -65,11 +65,13 @@ public class ResultFrame extends javax.swing.JFrame {
         LabelName1NegativeValue = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Your Results");
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("You have shown an automatic preference for");
 
         LabelNamePreferred.setFont(new java.awt.Font("Tahoma", 1, 16)); // NOI18N
+        LabelNamePreferred.setForeground(new java.awt.Color(204, 0, 0));
         LabelNamePreferred.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         LabelNamePreferred.setText("[name]");
 
