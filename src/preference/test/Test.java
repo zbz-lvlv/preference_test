@@ -149,7 +149,7 @@ public class Test {
             endTime = System.currentTimeMillis();
             
             if(!isItemName){
-                if((endTime - startTime) > 3000){
+                if((endTime - startTime) < 3000){
                     if(keyCode == 37){
                         if(combination == Combination.ITEM0GOOD){
                             timesItem0Good.add((int)(endTime - startTime));
